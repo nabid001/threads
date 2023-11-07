@@ -18,8 +18,6 @@ const page = async () => {
     pageSize: 25,
   });
 
-  console.log(result);
-
   return (
     <section>
       <h1 className="head-text text-light-1">Search page</h1>;{/* Search bar */}

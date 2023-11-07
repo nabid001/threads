@@ -12,7 +12,7 @@ const page = async ({ params }) => {
   if (!user) return null;
 
   const userInfo = await fetchUser(params.id);
-  if (!userInfo.onboarded) redirect("/");
+  if (!userInfo?.onboarded) redirect("/");
 
   return (
     <section>
