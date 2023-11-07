@@ -14,8 +14,6 @@ async function Page() {
 
   const activity = await getActivity(userInfo._id);
 
-  console.log(activity);
-
   return (
     <>
       <h1 className="head-text">Activity</h1>
