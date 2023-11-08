@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 import {
   Form,
   FormControl,
@@ -9,15 +9,15 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../ui/form";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { Textarea } from "../ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { usePathname, useRouter } from "next/navigation";
-import { ThreadValidation } from "@/lib/validations/threads";
-import { createThread } from "@/lib/actions/thread.actions";
+import { ThreadValidation } from "../../lib/validations/threads";
+import { createThread } from "../../lib/actions/thread.actions";
 
 const PostThread = ({ userId }) => {
   const router = useRouter();

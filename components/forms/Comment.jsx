@@ -9,16 +9,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../ui/form";
 import { useForm } from "react-hook-form";
 import { Input } from "../ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
 import { usePathname, useRouter } from "next/navigation";
-import { CommentValidation } from "@/lib/validations/threads";
+import { CommentValidation } from "../../lib/validations/threads";
 import Image from "next/image";
-import { addCommentToThread } from "@/lib/actions/thread.actions";
+import { addCommentToThread } from "../../lib/actions/thread.actions";
 
 const Comment = ({ threadId, currentUserImg, currentUserId }) => {
   const router = useRouter();
