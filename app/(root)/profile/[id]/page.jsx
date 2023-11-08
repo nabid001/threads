@@ -6,7 +6,7 @@ import {
   TabsContent,
   TabsTrigger,
 } from "../../../../components/ui/tabs";
-import { profileTabs } from "@/constants";
+import { profileTabs } from "../../../../constants";
 import { fetchUser } from "../../../../lib/actions/user.actions.js";
 import { currentUser } from "@clerk/nextjs";
 import Image from "next/image";

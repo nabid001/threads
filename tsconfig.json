@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "lib/models/community.model.js"  ],
   "exclude": [
     "node_modules"
   ]
