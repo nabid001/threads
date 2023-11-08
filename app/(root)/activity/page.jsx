@@ -3,7 +3,7 @@ import Link from "next/link";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-import { fetchUser, getActivity } from "@/lib/actions/user.actions.js";
+import { fetchUser, getActivity } from "../../../lib/actions/user.actions.js";
 
 async function Page() {
   const user = await currentUser();
