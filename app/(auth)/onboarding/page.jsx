@@ -1,8 +1,8 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-import { fetchUser } from "@/lib/actions/user.actions.js";
-import AccountProfile from "@/components/forms/AccountProfile.jsx";
+import { fetchUser } from "../../../lib/actions/user.actions.js";
+import AccountProfile from "../../../components/forms/AccountProfile.jsx";
 
 async function Page() {
   const user = await currentUser();

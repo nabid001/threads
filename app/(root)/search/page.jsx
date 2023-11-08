@@ -1,5 +1,5 @@
 import UserCard from "@/components/cards/UserCard";
-import { fetchUser, fetchUsers } from "@/lib/actions/user.actions.js";
+import { fetchUser, fetchUsers } from "../../../lib/actions/user.actions.js";
 import { currentUser } from "@clerk/nextjs";
 
 import { redirect } from "next/navigation";
